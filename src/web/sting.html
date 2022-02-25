@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Moje Hobby</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
+  <script src="jquery.min.js"></script>
+  <noscript>
+        <link rel="stylesheet" type="text/css" href="noscript_style.css">
+  </noscript>
+</head>
+<body onload="fadeIn()">
+    <div id="wrapper">
+        <header>
+            <img src="img/sting.jpg" alt="sting-img"> 
+        </header>
+
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="rodzaje.html">Rodzaje</a>
+            <a href="przykładowe_akordy.html">Przykładowe chwyty</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick = "dropdown_content()">Mistrzowie gitary
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            <div class="dropdown-content">
+            <a href="hendrix.html">Jimy Hendrix</a>
+            <a href="#" class="active">Sting</a>
+            <a href="rankingi.xml">Rankingi</a>
+            <a href="galeria.php">Galeria</a>
+            <a href="wyszukiwarka.php">Wyszukiwarka</a>
+            <a href="register.php">Zarejestruj się</a>
+            </div>
+            </div>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="#" class="icon" onclick="responsiveNav()">
+                <i class="fa fa-bars"></i> 
+            </a> 
+        </nav>
+
+        <section>
+            <h1>Sting</h1>
+            <article>              
+                <p><img class="hendrix_photo" src="img/sting_photo.jpg" alt="zdjęcie Stinga" />
+                    Sting, właściwie Gordon Matthew Sumner (ur. 2 października 1951 w Wallsend) – brytyjski muzyk, multiinstrumentalista, piosenkarz i kompozytor. W latach 70. i 80. był liderem, głównym kompozytorem, wokalistą i gitarzystą basowym zespołu The Police. Odznaczony tytułem komandora Orderu Imperium Brytyjskiego.<br><br>
+
+                    Swój pseudonim otrzymał w czasach szkolnych, gdy grywał z lokalnymi zespołami jazzowymi. Podczas jednego z występów miał na sobie sweter w czarno-żółte pasy. Koledzy z zespołu Phoenix Jazzmen uznali, że wygląda jak osa lub pszczoła i zaczęli nazywać go Sting (tj. „żądło”)
+                </p>
+                <h3>Dzieciństwo</h3>
+                <p>
+                        Urodził się w Wallsend, robotniczej dzielnicy Newcastle w Anglii. Jest najstarszym z czworga dzieci małżeństwa Audrey Cowell i Ernesta Sumnera. Ma brata Philipa oraz dwie siostry: Angelę i Anitę. Został wychowany w tradycji religii rzymskokatolickiej (jego babka pochodziła z irlandzkiej rodziny).<br><br>
+
+                        Naukę zaczął w szkole podstawowej pod wezwaniem św. Kolumby w Wallsend. Następnie uczył się w rzymskokatolickim gimnazjum pod wezwaniem św. Kutberta w Newcastle. Po jej ukończeniu zdał egzaminy wstępne na Uniwersytet Warwick w Coventry, gdzie przez jeden semestr studiował filologię angielską.<br><br>
+                        
+                        W latach 1965 i 1966 był mistrzem hrabstwa Northumberland w biegu na 100 metrów.<br><br>
+                        
+                        Przed rozpoczęciem kariery muzycznej pracował jako ochroniarz w klubie i magazynier. Po przerwaniu studiów wrócił do Newcastle, gdzie przez pół roku pracował na budowie. Później pracował w administracji jako urzędnik w dziale zajmującym się podatkiem dochodowym. W latach 1971-1974 uczęszczał do szkoły o profilu pedagogicznym. Następnie przez dwa lata pracował jako nauczyciel w rzymskokatolickiej szkole podstawowej w Cramlington.
+                </p><br>
+            </article>
+
+            <h1>Galeria Zdjęć</h1>
+            <div class="gallery">
+                <a target="_blank" href="img/sting_gallery1.jpg">
+                  <img src="img/sting_gallery1.jpg" alt="Sting-photo" width="600" height="400">
+                </a>
+                <div class="opis">Zdjęcie 1</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img/sting_gallery2.jpg">
+                  <img src="img/sting_gallery2.jpg" alt="Sting-photo" width="600" height="400">
+                </a>
+                <div class="opis">Zdjęcie 2</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img/sting_gallery3.jpg">
+                  <img src="img/sting_gallery3.jpg" alt="Sting-photo" width="600" height="400">
+                </a>
+                <div class="opis">Zdjęcie 3</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img/sting_gallery4.jpg">
+                  <img src="img/sting_gallery4.jpg" alt="Sting-photo" width="600" height="400">
+                </a>
+                <div class="opis">Zdjęcie 4</div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="img/sting_gallery5.jpg">
+                  <img src="img/sting_gallery5.jpg" alt="Sting-photo" width="600" height="400">
+                </a>
+                <div class="opis">Zdjęcie 5</div>
+              </div>
+
+            <iframe width="1000" height="563" src="https://www.youtube.com/embed/tyqNZkLEZ3U" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+      <footer>
+         Copyright 2019, Przemysław Rośleń<br>
+         Kontakt: <a href="mailto:przemek.roslen@gmail.com">
+            przemek.roslen@gmail.com</a>
+      </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Moje Hobby</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
+  <noscript>
+      <link rel="stylesheet" type="text/css" href="noscript_style.css">
+  </noscript>
+</head>
+<body onload="sesja()">
+      <div id="wrapper">
+            <header>
+                  <img src="img/rodzaje_background.jpg" alt="rodzaje_background">
+            </header>
+            <nav class="topnav" id="myTopnav">
+                  <a href="index.html">Home</a>
+                  <a href="#" class="active">Rodzaje</a>
+                  <a href="przykładowe_akordy.html">Przykładowe chwyty</a>
+                  <div class="dropdown">
+                        <button class="dropbtn" onclick = "dropdown_content()">Mistrzowie gitary
+                              <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                              <a href="hendrix.html">Jimy Hendrix</a>
+                              <a href="sting.html">Sting</a>
+                              <a href="rankingi.xml">Rankingi</a>
+                              <a href="galeria.php">Galeria</a>
+                              <a href="wyszukiwarka.php">Wyszukiwarka</a>
+                              <a href="register.php">Zarejestruj się</a>
+                        </div>
+                  </div>
+                  <a href="kontakt.html">Kontakt</a>
+                  <a href="#" class="icon" onclick="responsiveNav()">
+                        <i class="fa fa-bars"></i> 
+                  </a>
+            </nav>  
+            <h1 class="header">Gitary można podzielić na kilka rodzajów</h1>
+      
+            <div>
+                  <button class="button" onclick="Rodzaje(0)">Klasyczne</button>
+                  <button class="button" onclick="Rodzaje(1)">Akustyczne</button>
+                  <button class="button" onclick="Rodzaje(2)">Elektro-Akustyczne</button>
+                  <button class="button" onclick="Rodzaje(3)">Elektryczne</button>
+                  <button class="button" onclick="Rodzaje(4)">Basowe</button>
+                  <img src="img/miniaturka_gitara_klasyczna.png" class="guitar_icon" alt="miniaturka_gitara_klasyczna">
+                  <img src="img/miniaturka_gitara_akustyczna.jpg" class="guitar_icon" alt="miniaturka_gitara_akustyczna">
+                  <img src="img/miniaturka_gitara_elektroakustyczna.webp" class="guitar_icon" alt="miniaturka_gitara_elektroakustyczna">
+                  <img src="img/miniaturka_gitara_elektryczna.jpg" class="guitar_icon" alt="miniaturka_gitara_elektryczna">
+                  <img src="img/miniaturka_gitara_basowa.jpg" class="guitar_icon" alt="miniaturka_gitara_basowa">
+            </div>
+
+            <div class = "rodzaje">
+
+                  <div class="content_rodzaje">
+                        <img src="img/gitara_klasyczna.jpg" class="rodzaje_img" alt="gitara_klasyczna">
+                        <p>
+                        <strong>gitary klasyczne</strong><br> Jeżeli interesuje Cię muzyka klasyczna to najbardziej odpowiednia dla Ciebie będzie właśnie ta odmiana gitary.
+                        Gitary te charakteryzują się cichszym i łagodniejszym dźwiękiem niż w przypadku akustyków. 
+                        Mają z reguły nylonowe struny, stosunkowo mniejsze pudło rezonansowe i szerszy gryf.
+                        Jeżeli w swoim mieście zobaczysz plakaty festiwalu gitarowego lub zapowiedzi występów wirtuozów flamenco o latynosko brzmiących nazwiskach to na 90% będą tam właśnie gitary klasyczne.
+                        </p>
+                  </div>     
+                  <div class="content_rodzaje">
+                        <img src="img/gitara_akustyczna.jpg" class="rodzaje_img" alt="gitara_akustyczna">
+                        <p>
+                        <strong>gitary akustyczne</strong><br> Służą głównie do grania akustycznej muzyki rozrywkowej. Mają większę pudło rezonansowe niż klasyki, węższy gryf, zbliżony szerokością bardziej do gitar elektrycznych oraz metalowe struny. Na tych gitarach możesz dawać czadu na imprezach, grillach i ogniskach, grać zarówno akompaniament, jak i solówki, wymiatać palcami lub piórkiem. Dają dźwięk ostry, wyrazisty (z racji metalowych strun).
+                        </p>
+                  </div>
+                  <div class="content_rodzaje">
+                        <img src="img/gitara_elektroakustyczna.jpg" class="rodzaje_img" alt="gitara_elektroakustyczna">
+                        <p>
+                        <strong>gitary elektro-akustyczne</strong><br> Droższa wersja gitary akustycznej, wyposażona dodatkowo w przetwornik elektroniczny, który umożliwia podłączenie gitary np. na koncercie. Ale uwaga - to wcale nie robi z niej gitary elektrycznej, jedynie umożliwia podpięcię się do sprzętu, instrument ciągle brzmi jak akustyk. Jeżeli do Twojego miasta przyjeżdża jakiś zespół na bluesowy koncert akustyczny lub widzisz w sklepie płytę w wersji "unplugged" to na 90% będą tam właśnie gitary elektroakustyczne.
+                        </p>
+                  </div>
+                  <div class="content_rodzaje">
+                        <img src="img/gitara_elektryczna.jpg" class="rodzaje_img" alt="gitara_elektryczna">
+                        <p>
+                        <strong>gitary elektryczne</strong><br> No nie wiem co tu jest do tłumaczenia. Każdy na pewno taką gitarę widział w rękach jakiegoś wymiatacza. Dźwięk powstaje tu dzięki specjalnym przetwornikom, reagującym na ruch metalowej struny ponad nimi. Oprócz tego wymaga dodatkowego osprzętu w postaci wzmacniacza, który umożliwia rozprzestrznianie dźwięku początkującego grajka po całym osiedlu oraz zawiera czasem pokrętła dodające określone efekty i drastycznie zmieniające barwę muzyki.
+                        </p>
+                  </div>
+                  <div class="content_rodzaje">
+                        <img src="img/gitara_basowa.jpg" class="rodzaje_img" alt="gitara_basowa">
+                        <p>
+                        <strong>gitary basowe</strong><br> Mogą być zarówno akustyczne jak i elektryczne. Służą do grania partii basowych, czyli tego, co najlepiej słychać na podkręconym na maksa subwooferze Twojego zestawu muzycznego (bo na pewno taki posiadasz a jeżeli nie to ten typ gitary nie jest raczej dla Ciebie). Mają z reguły cztery struny w porywach do pięciu, za to bardzo grube.
+                        </p>
+                  </div>
+
+            </div>
+            <footer>
+                  Copyright 2019, Przemysław Rośleń<br>
+                  Kontakt: <a class="footer_link" href="mailto:przemek.roslen@gmail.com">przemek.roslen@gmail.com</a>
+            </footer>
+      </div>
+</body>
+</html>

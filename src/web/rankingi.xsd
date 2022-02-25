@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="Rankingi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Gitarzyści" type="GitarzyściType" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element name="links" type="linksType" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element name="media" type="mediaType" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element name="Gitary" type="GitaryType" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element ref="footer" />
+      </xs:sequence>
+    </xs:complexType>    
+  </xs:element>
+  <xs:complexType name="GitarzyściType">
+    <xs:sequence>
+      <xs:element name="Gitarzysta" type="GitarzystaType" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GitarzystaType">
+    <xs:sequence>
+      <xs:element name="informacje" type="informacjeType" />
+    </xs:sequence>
+    <xs:attribute ref="mistrz" use="required" />   
+  </xs:complexType>
+  <xs:complexType name="informacjeType">
+    <xs:sequence>
+      <xs:element name="pozycja" type="xs:decimal" />
+      <xs:element name="imie" type="shortStringType" />
+      <xs:element name="nazwisko" type="longStringType" />
+      <xs:element name="Pochodzenie" type="longStringType" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:attribute name="mistrz" type="mistrzType" />
+  <xs:simpleType name="mistrzType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="tak|nie"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="linksType">
+    <xs:sequence>
+      <xs:element ref="link" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="linkType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="source" type="xs:anyURI" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="link" type="linkType" />
+  
+  <xs:complexType name="mediaType">
+    <xs:sequence>
+      <xs:element ref="image" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="imageType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="title" type="shortStringType" />
+        <xs:attribute name="source" type="xs:anyURI" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType> 
+  <xs:element name="image" type="imageType" />   
+
+  <xs:complexType name="GitaryType">
+    <xs:sequence>
+      <xs:element name="Gitara" type="GitaraType" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType> 
+  <xs:complexType name="GitaraType">
+    <xs:sequence>
+      <xs:element name="model" type="modelType" />
+      <xs:element name="rodzaj" type="rodzajType" />
+      <xs:choice>
+        <xs:element name="opis" type="opisType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="brakopisu" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="producent" type="shortStringType" />
+    <xs:attribute name="korpus" type="longlongStringType" />
+  </xs:complexType>
+  
+  <xs:complexType name="modelType">
+    <xs:simpleContent>
+      <xs:extension base="xs:normalizedString">
+        <xs:attribute ref="cena"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="cenaType">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:minInclusive value="100"/>
+      <xs:maxInclusive value="10000"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="cena" type="cenaType" />
+
+  <xs:simpleType name="rodzajType">
+    <xs:restriction base="shortStringType">
+          <xs:enumeration value="Klasyczna" />
+          <xs:enumeration value="Akustyczna" />
+          <xs:enumeration value="Elektryczna" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="opisType" mixed="true">
+    <xs:sequence>
+      <xs:element name="typ" />
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:element name="footer" type="footerType" />
+  <xs:complexType name="footerType">
+    <xs:sequence>
+      <xs:element name="imie" type="shortStringType" />
+      <xs:element name="nazwisko" type="longStringType" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="shortStringType">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="longStringType">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="40" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="longlongStringType">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="800" />
+    </xs:restriction>
+  </xs:simpleType>
+  
+</xs:schema>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="rankingi.xslt"?>
+<Rankingi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="rankingi.xsd">
+  <Gitarzyści>
+        <Gitarzysta mistrz="tak">
+            <informacje>
+                <pozycja>1</pozycja>
+                <imie>Jimi</imie>
+                <nazwisko>Hendrix</nazwisko>
+                <Pochodzenie>USA</Pochodzenie>
+            </informacje>
+        </Gitarzysta>
+        <Gitarzysta mistrz="nie">
+            <informacje>
+                <pozycja>2</pozycja>
+                <imie>Eric</imie>
+                <nazwisko>Clapton</nazwisko>
+                <Pochodzenie>Wielka Brytania</Pochodzenie>
+            </informacje>
+        </Gitarzysta>
+        <Gitarzysta mistrz="nie">
+            <informacje>
+                <pozycja>3</pozycja>
+                <imie>Jimmy</imie>
+                <nazwisko>Page</nazwisko>
+                <Pochodzenie>Wielka Brytania</Pochodzenie>
+            </informacje>
+        </Gitarzysta>
+        <Gitarzysta mistrz="nie">
+            <informacje>
+                <pozycja>4</pozycja>
+                <imie>Keith</imie>
+                <nazwisko>Richards</nazwisko>
+                <Pochodzenie>Wielka Brytania</Pochodzenie>
+            </informacje>
+        </Gitarzysta>
+        <Gitarzysta mistrz="nie">
+            <informacje>
+                <pozycja>5</pozycja>
+                <imie>Jeff</imie>
+                <nazwisko>Beck</nazwisko>
+                <Pochodzenie>Wielka Brytania</Pochodzenie>
+            </informacje>
+        </Gitarzysta>
+        <Gitarzysta mistrz="nie">
+            <informacje>
+                <pozycja>6</pozycja>
+                <imie>B.B.</imie>
+                <nazwisko>King</nazwisko>
+                <Pochodzenie>USA</Pochodzenie>
+            </informacje>
+        </Gitarzysta>
+        <Gitarzysta mistrz="nie">
+            <informacje>
+                <pozycja>7</pozycja>
+                <imie>Eddie</imie>
+                <nazwisko>Van Halen</nazwisko>
+                <Pochodzenie>Holandia</Pochodzenie>
+            </informacje>
+        </Gitarzysta>
+        <Gitarzysta mistrz="nie">
+            <informacje>
+                <pozycja>8</pozycja>
+                <imie>Kurt</imie>
+                <nazwisko>Cobain</nazwisko>
+                <Pochodzenie>USA</Pochodzenie>
+            </informacje>
+        </Gitarzysta>
+        <Gitarzysta mistrz="nie">
+            <informacje>
+                <pozycja>9</pozycja>
+                <imie>Sting</imie>
+                <nazwisko></nazwisko>
+                <Pochodzenie>Wielka Brytania</Pochodzenie>
+            </informacje>
+        </Gitarzysta>
+        <Gitarzysta mistrz="nie">
+            <informacje>
+                <pozycja>10</pozycja>
+                <imie>John</imie>
+                <nazwisko>Frusciante</nazwisko>
+                <Pochodzenie>USA</Pochodzenie>
+            </informacje>
+        </Gitarzysta>
+    </Gitarzyści>
+        
+        <links>
+            <link source="https://pl.wikipedia.org/wiki/Lista_100_najlepszych_gitarzystów_wszech_czasów_magazynu_Rolling_Stone">Lista 100 najlepszych gitarzystów wszech czasów magazynu Rolling Stone</link>
+            <link source="https://wpolityce.pl/kultura/249228-gibson-typuje-10-najlepszych-heavy-metalowych-gitarzystow-wszech-czasow">10 najlepszych heavy metalowych gitarzystów wszech czasów</link>
+            <link source="https://magazyngitarzysta.pl/muzyka/wywiady/38616-20-najlepszych-shredderow-wszech-czasow">20 najlepszych shredderów wszech czasów</link>
+        </links>  
+
+        <media>
+          <image title="hendrix" source="img/hendrix_gallery1.jpg">Jimi Hendrix</image>
+          <image title="sting" source="img/sting_gallery1.jpg">Sting</image>
+          <image title="clapton" source="img/clapton_gallery1.jpg">Eric Clapton</image>
+          <image title="frusciante" source="img/frusciante_gallery1.jpg">John Frusciante</image>
+          <image title="cobain" source="img/cobain_gallery1.jpg">Kurt Cobain</image>
+        </media>
+    
+    <Gitary>
+            <Gitara producent="Yamaha" korpus="olcha">
+                <model cena="900">Yamaha Pacifica 112 J</model>
+                <rodzaj>Elektryczna</rodzaj>
+                <opis>Gitara <typ>elektryczna</typ> z serii Pacifica. Korpus wykonany jest z litego drewna Agathis. Bolt-On gryf z Klonu, podstrunnica z palisandru, osadzona 22 progami. Radius 13", menzura 647,7 mm. Mostek Vintage Tremolo z Block Saddle. Przetworniki 2x Alnico V Single i 1x Alnico V Humbucker. Klucze Die-cast, 5-pozycyjny przełącznik. Potencjometry Volume, Tone, hardware chromowany.</opis>
+            </Gitara>
+            <Gitara producent="Epiphone" korpus="olcha + mahoń">
+                <model cena="1300">Epiphone Les Paul Standard</model>
+                <rodzaj>Elektryczna</rodzaj>
+                <opis>Gitara <typ>elektryczna</typ> Les Paul Standard, wyposażona w doskonałej jakości elektronikę. Mostek Tune-o-matic, 2x przetworniki Alnico Classic humbucker, 3-pozycyjny przełącznik, 2x potencjometry tonu i głośności. Prezentujący się naprawdę elegancko Les Paul Standard to jeszcze jeden powód, by zakochać się w gitarach Les Paul. Nowatorskie połączenie najwyższej jakości klonu i mahoniu, wmontowane w korpus przystawki o mięsistym, selektywnym brzmieniu, a przede wszystkim fakt autoryzowania gitar Epiphone Les Paul przez samego ich twórcę sprawią, że z pewnością nie pożałujesz wyboru gdy już się na nie zdecydujesz. Podstrunnica została wykonana z palisandru. Binding na korpusie i gryfie. Menzura 24.75", 22-progów. Osprzęt chromowany. Klucze Grover.</opis>
+            </Gitara>
+            <Gitara producent="PSD" korpus="olcha">
+                <model cena="1100">PSD LP1 Les Paul Standard</model>
+                <rodzaj>Elektryczna</rodzaj>
+            </Gitara>
+            <Gitara producent="Yamaha" korpus="mahoń">
+                <model cena="700">Yamaha F-310</model>
+                <rodzaj>Akustyczna</rodzaj>
+                <opis>Gitary <typ>akustyczne</typ> firmy Yamaha już od wielu lat pracują ciężko na swoją popularność, przekonując tym samym całą rzeszę muzyków na całym świecie. Bardzo dobre wykonanie i rygorystyczna kontrola jakości sprawiają, że instrumenty bardzo często pozostają bezkonkurencyjne w swoich przedziałach cenowych. Model F-310 to jeden z najpopularniejszych akustyków, który zdobył uznanie wśród początkujących, średnio zaawansowanych i doświadczonych gitarzystów.</opis>
+            </Gitara>
+            <Gitara producent="Ibanez" korpus="mahoń">
+                <model cena="1200">Ibanez PF15ECE</model>
+                <rodzaj>Akustyczna</rodzaj>
+            </Gitara>
+            <Gitara producent="Yamaha" korpus="świerk">
+                <model cena="1900">Yamaha APX-700 II</model>
+                <rodzaj>Akustyczna</rodzaj>
+                <opis>Gitara <typ>elektro akustyczna</typ>. Płyta wierzchnia wykonana jest z litego świerku. Tył i boki z Nato, gryf z Nato i podstrunnica z Palisandru osadzona 22 progami. Mechanika strojenia chromowana. Menzura 650 mm. Przetwornik Piezo, aktywna elektronika z 3-pasmowym EQ. Tuner chromowany i regulator Volume.</opis>
+            </Gitara>
+    </Gitary>
+    <footer>
+        <imie>Przemysław</imie>
+        <nazwisko>Rośleń</nazwisko>
+    </footer>
+</Rankingi>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Moje Hobby</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
+  <script src="jquery.min.js"></script>
+  <noscript>
+        <link rel="stylesheet" type="text/css" href="noscript_style.css">
+  </noscript>
+</head>
+<body onload="fadeIn()">
+
+    <div id="wrapper2">
+        <header>
+            <img src="img/hendrix.jpg" alt="hendrix-img"> 
+        </header>
+
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="rodzaje.html">Rodzaje</a>
+            <a href="przykładowe_akordy.html">Przykładowe chwyty</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick = "dropdown_content()">Mistrzowie gitary
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            <div class="dropdown-content">
+            <a href="#" class="active">Jimy Hendrix</a>
+            <a href="sting.html">Sting</a>
+            <a href="rankingi.xml">Rankingi</a>
+            <a href="galeria.php">Galeria</a>
+            <a href="wyszukiwarka.php">Wyszukiwarka</a>
+            <a href="register.php">Zarejestruj się</a>
+            </div>
+            </div>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="#" class="icon" onclick="responsiveNav()">
+                <i class="fa fa-bars"></i> 
+            </a> 
+        </nav>
+        
+        <section>      
+            <h1>Jimi Hendrix</h1>  
+            <article>          
+                <p><img class="hendrix_photo" src="img/hendrix_photo.jpg" alt="zdjęcie Hendrixa" />
+                    Jimi Hendrix, właśc. James Marshall Hendrix (ur. 27 listopada 1942 w Seattle w stanie Waszyngton, zm. 18 września 1970 w Londynie) – amerykański gitarzysta, wokalista, kompozytor, autor tekstów.
+                    <br><br>
+                    Jest powszechnie uważany za najwybitniejszego i najbardziej wpływowego gitarzystę rockowego w historii, oraz jedną z najbardziej znanych postaci w historii muzyki rockowej. Mianem „najwybitniejszego” został po raz kolejny uhonorowany w plebiscycie magazynu muzycznego Rolling Stone w 2003 roku. Po sukcesie w Europie zdobył popularność także w Stanach Zjednoczonych, do czego przyczynił się jego występ na festiwalu w Monterey w 1967 roku. Później był głównym artystą festiwalu Woodstock (1969) i festiwalu na wyspie Wight (1970). Zmarł nagle dwa miesiące przed swoimi 28 urodzinami. Zgon był spowodowany zachłyśnięciem się wymiocinami i zatruciem barbituranami.
+                </p><br>
+                <h3>Kariera</h3>
+                <p>
+                    Wydał trzy albumy studyjne Are You Experienced, Axis: Bold as Love, Electric Ladyland i jeden koncertowy Band of Gypsys. Płyta Are You Experienced była, podobnie jak Sgt. Pepper’s Lonely Hearts Club Band zespołu The Beatles, jedną z pierwszych i najważniejszych płyt koncepcyjnych w historii. Hendrix wypracował szereg unikatowych, nieznanych wcześniej technik gry na gitarze elektrycznej, stworzył własny unikatowy styl łączący fuzz, feedback i kontrolę zniekształceń. Zrewolucjonizował niemal każdy aspekt gry na gitarze elektrycznej i wyniósł grę na niej do sztuki wirtuozerskiej (w obrębie muzyki rockowej). Był jednym z najbardziej innowacyjnych muzyków wszech czasów, jednym z pierwszych którzy eksperymentowali z efektami, w tym ze stereofonicznym efektem przejścia (phasing effect). Oprócz nagrywania formalnych sesji studyjnych rejestrował też dema powstałe w hotelu czy nieformalne jamowanie w klubach nocnych. Po jego śmierci wydano setki płyt, co czyni go prawdopodobnym rekordzistą w liczbie pośmiertnie wydanych albumów. Cieszył się ogromną popularnością. Był nie tylko muzykiem, potrafił malować. Był też producentem muzycznym – w tej roli brał udział w nagrywaniu płyty Sunrise grupy Eire Apparent (gdzie gra też na gitarze w kilku utworach) i The Street Giveth ... And the Street Taketh Away zespołu Cat Mother & the All Night Newboys, wyprodukował też dwa albumy grupy The Buddy Miles Express (Expressway to Your Skull i Electric Church). Jego postać wykorzystano w grze komputerowej Guitar Hero World Tour.
+                </p><br>
+            </article>
+
+            <h1>Galeria Zdjęć</h1>
+            <div class="gallery">
+                <a target="_blank" href="img/hendrix_gallery1.jpg">
+                  <img src="img/hendrix_gallery1.jpg" alt="Hendrix-photo" width="600" height="400">
+                </a>
+                <div class="opis">Zdjęcie 1</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img/hendrix_gallery2.jpg">
+                  <img src="img/hendrix_gallery2.jpg" alt="Hendrix-photo" width="600" height="400">
+                </a>
+                <div class="opis">Zdjęcie 2</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img/hendrix_gallery3.jpg">
+                  <img src="img/hendrix_gallery3.jpg" alt="Hendrix-photo" width="600" height="400">
+                </a>
+                <div class="opis">Zdjęcie 3</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img/hendrix_gallery4.jpg">
+                  <img src="img/hendrix_gallery4.jpg" alt="Hendrix-photo" width="600" height="400">
+                </a>
+                <div class="opis">Zdjęcie 4</div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="img/hendrix_gallery5.jpg">
+                  <img src="img/hendrix_gallery5.jpg" alt="Hendrix-photo" width="600" height="400">
+                </a>
+                <div class="opis">Zdjęcie 5</div>
+              </div>
+
+            <iframe width="1000" height="563" src="https://www.youtube.com/embed/wLYMkmDBTmQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+      <footer>
+         Copyright 2019, Przemysław Rośleń<br>
+         Kontakt: <a href="mailto:przemek.roslen@gmail.com">
+            przemek.roslen@gmail.com</a>
+      </footer>
+    </div>
+</body>
+</html>
